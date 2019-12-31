@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    build: .
+    image: tobihein/jupyter-scipy-nb-viz:latest
+    ports:
+     - "8888:8888"
+    volumes:
+     - ./notebooks:/notebooks
