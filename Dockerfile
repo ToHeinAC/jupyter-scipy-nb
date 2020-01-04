@@ -28,6 +28,7 @@ USER root
 
 # Install Python 3 packages
 RUN conda install --quiet --yes \
+    'geoplot' \
     'plotly' \
     'pip' \
     && \
